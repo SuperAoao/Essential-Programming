@@ -7,5 +7,5 @@ project(CppPractice)
 # 添加可执行文件和对应的源文件
 add_executable(sizeof sizeof.cpp)
 add_executable(copy_constructor copy_constructor.cpp)
-add_executable(assignment_operator_function assignment_operator_function.cpp)
+add_executable(01_assignment_operator_function 01_assignment_operator_function.cpp)
 # 添加更多的项目...
