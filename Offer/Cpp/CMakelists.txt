@@ -8,4 +8,5 @@ project(CppPractice)
 add_executable(sizeof sizeof.cpp)
 add_executable(copy_constructor copy_constructor.cpp)
 add_executable(01_assignment_operator_function 01_assignment_operator_function.cpp)
+add_executable(02_singleton 02_singleton.cpp)
 # 添加更多的项目...
