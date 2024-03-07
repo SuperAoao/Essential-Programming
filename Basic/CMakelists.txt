@@ -1,0 +1,14 @@
+# 设置CMake的最低版本要求
+cmake_minimum_required(VERSION 3.0)
+
+# 创建一个项目
+project(CppBasic)
+
+# 添加可执行文件和对应的源文件
+add_executable(const const.cpp)
+add_executable(auto auto.cpp)
+# add_executable(copy_constructor copy_constructor.cpp)
+# add_executable(01_assignment_operator_function 01_assignment_operator_function.cpp)
+# add_executable(02_singleton 02_singleton.cpp)
+# add_executable(03_01_duplication_in_array 03_01_duplication_in_array.cpp)
+# 添加更多的项目...
