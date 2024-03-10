@@ -10,5 +10,9 @@ add_executable(auto auto.cpp)
 add_executable(cleft_right_value left_right_value.cpp)
 add_executable(move move.cpp)
 add_executable(callable_object callable_object.cpp)
-# add_executable(03_01_duplication_in_array 03_01_duplication_in_array.cpp)
+add_executable(part3_class_const part3_class_const.cpp)
+add_executable(part3_class_default_delete part3_class_default_delete.cpp)
+add_executable(part3_class_override_operator part3_class_override_operator.cpp)
+add_executable(part3_class_inheritance part3_class_inheritance.cpp)
+
 # 添加更多的项目...
