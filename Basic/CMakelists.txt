@@ -15,5 +15,6 @@ add_executable(part3_class_default_delete part3_class_default_delete.cpp)
 add_executable(part3_class_override_operator part3_class_override_operator.cpp)
 add_executable(part3_class_inheritance part3_class_inheritance.cpp)
 add_executable(part1_c_extern part1_c_extern_file1.h part1_c_extern_file2.h part1_c_extern_file1.cpp part1_c_extern_file2.cpp part1_c_extern.cpp)
+add_executable(part8_thread part8_thread.cpp)
 
 # 添加更多的项目...
