@@ -7,7 +7,7 @@
 
 int main()
 {
-    Test a(10);
-    a.func();
+    //Test a(10);
+    //a.func();
     return 0;
 }
