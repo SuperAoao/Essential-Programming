@@ -1,0 +1,27 @@
+# 设置CMake的最低版本要求
+cmake_minimum_required(VERSION 3.0)
+
+# 创建一个项目
+project(CppInterview)
+
+# 添加可执行文件和对应的源文件
+add_executable(func func.cpp)
+add_executable(sizeof sizeof.cpp)
+# add_executable(cleft_right_value left_right_value.cpp)
+# add_executable(move move.cpp)
+# add_executable(move_constructor move_constructor.cpp)
+# add_executable(member_initialize_order member_initialize_order.cpp)
+# add_executable(template_parameterpack template_parameterpack.cpp)
+# add_executable(reference "reference.cpp" "reference.h")
+# add_executable(callable_object callable_object.cpp)
+# add_executable(part3_class_const part3_class_const.cpp)
+# add_executable(part3_class_default_delete part3_class_default_delete.cpp)
+# add_executable(part3_class_override_operator part3_class_override_operator.cpp)
+# add_executable(part3_class_inheritance part3_class_inheritance.cpp)
+# add_executable(part1_c_extern part1_c_extern_file1.h part1_c_extern_file2.h part1_c_extern_file1.cpp part1_c_extern_file2.cpp part1_c_extern.cpp)
+# add_executable(part8_thread part8_thread.cpp)
+# add_executable(part8_thread_params part8_thread_params.cpp)
+# add_executable(part8_thread_mute_atomic part8_thread_mute_atomic.cpp)
+
+
+# 添加更多的项目...
