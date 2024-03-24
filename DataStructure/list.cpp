@@ -131,6 +131,29 @@ bool isCyclic(singleListHead* head)
 	}
 }
 
+singleList* middle(singleListHead* head)
+{
+	if (!head)
+	{
+		return nullptr;
+	}
+	else
+	{
+		singleList* s1 = head->head;
+		singleList* s2 = s1;
+		while (true)
+		{
+			if (!s2 || !s2->next)
+			{
+				return s1;
+			}
+			s1 = s1->next;
+			s2 = s2->next->next;
+		}
+		return nullptr;
+	}
+}
+
 int main()
 {
 	singleListHead head = { nullptr };
@@ -152,12 +175,18 @@ int main()
 	printf_s("insert 0,1,2,3,4,5,6\n");
 	dump(&head);
 
+
+	printf("middle val: %d\n", middle(&head)->val);
+
 	reverse(&head);
 	printf_s("after reverse\n");
 	dump(&head);
 
+
 	list[0].next = &list[6];
 	printf("list is%s cyclic\n", isCyclic(&head) ? "" : " not");
+
+
 
 	return 0;
 }
