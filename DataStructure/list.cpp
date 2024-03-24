@@ -90,8 +90,24 @@ singleList* deleteHead(singleListHead* head)
 
 int main()
 {
-	std::list<int> list = { 1,2,3 };
-
+	singleListHead head = { nullptr };
+	singleList list[10];
+	singleList** prev = nullptr;
+	int idx = 0;
+	for (int i = 0; i < 10; i++)
+	{
+		list[i].val = idx++;
+		list[i].next = nullptr;
+	}
+	insertHead(&head, &list[6]);
+	insertHead(&head, &list[5]);
+	insertHead(&head, &list[4]);
+	insertHead(&head, &list[3]);
+	insertHead(&head, &list[2]);
+	insertHead(&head, &list[1]);
+	insertHead(&head, &list[0]);
+	printf_s("insert 0,1,2,3,4,5,6\n");
+	dump(&head);
 
 	return 0;
 }
