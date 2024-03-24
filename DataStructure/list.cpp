@@ -108,6 +108,29 @@ void reverse(singleListHead* head)
 	}
 }
 
+bool isCyclic(singleListHead* head)
+{
+	if (!head)
+	{
+		return false;
+	}
+	else
+	{
+		singleList* s1, *s2;
+		s1 = s2 = head->head;
+		while (s1)
+		{
+			s1 = s1->next;
+			s2 = s2->next ? s2->next->next : s2->next;
+			if (s1 == s2)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+}
+
 int main()
 {
 	singleListHead head = { nullptr };
@@ -132,6 +155,9 @@ int main()
 	reverse(&head);
 	printf_s("after reverse\n");
 	dump(&head);
+
+	list[0].next = &list[6];
+	printf("list is%s cyclic\n", isCyclic(&head) ? "" : " not");
 
 	return 0;
 }
