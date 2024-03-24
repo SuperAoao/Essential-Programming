@@ -88,6 +88,26 @@ singleList* deleteHead(singleListHead* head)
 	}
 }
 
+void reverse(singleListHead* head)
+{
+	if (head)
+	{
+		struct singleListHead tmp = { nullptr };
+		struct singleList* elem;
+
+		while (!isEmpty(head)) {
+			elem = deleteHead(head);
+			insertHead(&tmp, elem);
+		}
+
+		head->head = tmp.head;
+	}
+	else
+	{
+		return;
+	}
+}
+
 int main()
 {
 	singleListHead head = { nullptr };
@@ -107,6 +127,10 @@ int main()
 	insertHead(&head, &list[1]);
 	insertHead(&head, &list[0]);
 	printf_s("insert 0,1,2,3,4,5,6\n");
+	dump(&head);
+
+	reverse(&head);
+	printf_s("after reverse\n");
 	dump(&head);
 
 	return 0;
