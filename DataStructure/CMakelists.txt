@@ -7,6 +7,7 @@ project(CppDataStructure)
 # 添加可执行文件和对应的源文件
 add_executable(time_complexity time_complexity.cpp)
 add_executable(list list.cpp)
+add_executable(sort_bubble sort_bubble.cpp)
 # add_executable(cleft_right_value left_right_value.cpp)
 # add_executable(move move.cpp)
 # add_executable(move_constructor move_constructor.cpp)
