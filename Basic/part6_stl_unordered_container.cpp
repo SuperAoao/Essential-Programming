@@ -10,6 +10,6 @@ int main()
 	{
 		std::cout << i << std::endl;
 	}
-
+	std::cout << "unorderedSet.bucket_count(): " <<unorderedSet.bucket_count() << std::endl;
 	return 0;
 }

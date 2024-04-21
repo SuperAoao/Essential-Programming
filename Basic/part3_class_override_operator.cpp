@@ -32,6 +32,11 @@ public:
     {
         m_age = age;
     }
+    void operator()(int n)
+    {
+        std::cout << "operator()(int n): " << n << std::endl;
+    }
+
 private:
     std::string m_name;
     unsigned int m_age;
@@ -49,5 +54,8 @@ int main()
     t_const.output();
     // 常对象不能修改
     //t_const.setAge(31);
+    t(2);
+    t.operator()(3);
+    ::operator new
     return 0;
 }

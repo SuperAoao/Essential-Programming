@@ -1,5 +1,6 @@
 #include <iostream>
 
+
 template <typename T>
 struct getType
 {
