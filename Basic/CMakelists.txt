@@ -4,6 +4,11 @@ cmake_minimum_required(VERSION 3.10.0)
 project(CppBasic)
 
 # 添加可执行文件和对应的源文件
+add_executable(char_uchar char_uchar.cpp)
+add_executable(bitset bitset.cpp)
+add_executable(hex hex.cpp)
+add_executable(mem_string mem_string.cpp)
+add_executable(new_address new_address.cpp)
 add_executable(const const.cpp)
 add_executable(auto auto.cpp)
 add_executable(cleft_right_value left_right_value.cpp)
