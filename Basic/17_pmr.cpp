@@ -1,0 +1,2 @@
+﻿#include <memory_resource>
+
