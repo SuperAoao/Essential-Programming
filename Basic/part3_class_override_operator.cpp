@@ -56,6 +56,7 @@ int main()
     //t_const.setAge(31);
     t(2);
     t.operator()(3);
-    ::operator new
+    Test* t1 = new Test();
+
     return 0;
 }
