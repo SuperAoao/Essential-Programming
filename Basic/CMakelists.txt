@@ -4,6 +4,8 @@
 project(CppBasic)
 
 # 添加可执行文件和对应的源文件
+add_executable(definite_Integrals definite_Integrals.cpp)
+add_executable(double_intergrals double_intergrals.cpp)
 add_executable(offsetof offsetof.cpp)
 add_executable(17_pmr 17_pmr.cpp)
 add_executable(void_t void_t.cpp)
