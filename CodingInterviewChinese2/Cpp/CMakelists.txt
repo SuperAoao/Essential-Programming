@@ -11,4 +11,5 @@ add_executable(copy_constructor copy_constructor.cpp)
 add_executable(01_assignment_operator_function 01_assignment_operator_function.cpp)
 add_executable(02_singleton 02_singleton.cpp)
 add_executable(03_01_duplication_in_array 03_01_duplication_in_array.cpp)
+add_executable(03_02_duplicaiton_in_array_no_edit.cpp 03_02_duplicaiton_in_array_no_edit.cpp)
 # 添加更多的项目...
